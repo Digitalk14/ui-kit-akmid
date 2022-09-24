@@ -1,0 +1,22 @@
+{
+  "name": "akmid-ui-kit",
+  "version": "1.0.0",
+  "description": "Akmid's ui-kit just for fun",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digitalk14/ui-kit.git"
+  },
+  "keywords": [
+    "ui-kit"
+  ],
+  "author": "akmid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Digitalk14/ui-kit/issues"
+  },
+  "homepage": "https://github.com/Digitalk14/ui-kit#readme"
+}
