@@ -22,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/Digitalk14/ui-kit/issues"
   },
-  "homepage": "https://Digitalk14.github.io/ui-kit-akmid",
+  "homepage": "https://digitalk14.github.io/ui-kit-akmid",
   "dependencies": {
     "linaria": "^4.1.3",
     "react": "^18.2.0",
