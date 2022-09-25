@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
     entry: "./src/index.tsx",
@@ -25,8 +26,8 @@ module.exports = {
     },
     resolve: { extensions: ["*", ".js", ".jsx", ".tsx", ".ts"] },
     output: {
-        path: path.resolve(__dirname, "dist/"),
-        publicPath: "/dist/",
+        path: path.resolve(__dirname, "build"),
+        publicPath: "/",
         filename: "bundle.js"
     },
     devServer: {
@@ -37,10 +38,14 @@ module.exports = {
         port: 3000,
         // publicPath
         devMiddleware: {
-            publicPath: "https://localhost:3000/dist/",
+            publicPath: "./build",
         },
         // hotOnly
         hot: "only",
     },
-    plugins: [new webpack.HotModuleReplacementPlugin()]
+    plugins: [new webpack.HotModuleReplacementPlugin(),
+    new HtmlWebpackPlugin({
+        template: path.join(__dirname, "public", "index.html"),
+    })
+    ]
 };
