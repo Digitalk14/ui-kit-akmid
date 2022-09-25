@@ -38,7 +38,7 @@ module.exports = {
         port: 3000,
         // publicPath
         devMiddleware: {
-            publicPath: "./build",
+            publicPath: "./public",
         },
         // hotOnly
         hot: "only",
